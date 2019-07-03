@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///G:/mean/javascript/simpleinterest.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Simple Interest</title>
+<script>
+        function calculate()
+            {
+                p = document.getElementById("p").value;
+                n = document.getElementById("n").value;
+                r = document.getElementById("r").value;
+                result = document.getElementById("result");
+                result.innerHTML = "The interest is " + (p*n*r/100);
+            }
+</script>
+</head>
+<body>
+    <h1>Simple Interest Cal</h1>
+        Amount:<input id="p">
+        <br><br>
+        Rate:<input id="r">
+        <br><br>
+        No of yrs:<input id="n">
+        <br><br>
+        <button onclick="calculate()">Calculate</button>
+        <p id="result">The interest is 3035.64</p>
+
+</body></html>

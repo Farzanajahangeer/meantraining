@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///G:/mean/javascript/primeornot.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script>
+	   function PrimeOrNot()
+			{
+				var i,flag=0,number;
+				number = Number(document.getElementById("N").value);
+
+				for(i=2; i <= number/2; i++)
+				{
+					if(number%i == 0)
+					{
+						flag = 1;
+						break;
+					}
+				}
+				if(flag == 0)
+				{
+					window.alert(number + "The given num is prime");
+				}
+				else
+				{
+					window.alert(number + "The given num is not prime");
+				}
+			}
+</script>
+</head>
+<body>
+<br>
+<h2>Check the number is Prime or not</h2>
+    Enter The Number : <input type="text" name="n" id="N">
+    <br><br>
+	<button onclick="PrimeOrNot()">Submit</button>
+
+</body></html>

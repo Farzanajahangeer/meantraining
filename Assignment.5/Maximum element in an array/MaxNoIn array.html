@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///G:/mean/javascript/maxofarray.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>
+      <h2>The MaxNumber in an array</h2>
+<script>
+      function max(mx) 
+      {
+      var large = mx[0];
+      for(var i=1; i<mx.length; i++) {
+      if(large < mx[i]) {
+      large = mx[i];
+      }
+}
+return large;
+}
+
+var input = [500,150,95,17,980];
+var output = max(input);
+
+console.log("The MaxNo in an array is:",output);
+</script>
+
+</body></html>

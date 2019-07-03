@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)file:///G:/mean/javascript/search.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>
+	<h1> Search element in an Array</h1>
+	<script>
+		function findElement(arr,Search)
+		{
+			var num=Search;
+			for (i=0;i<arr.length;i++)
+			{
+				if(arr[i]==num)
+				{
+					return true;
+					break;
+				}
+			}
+		}
+
+		var arr =[100,200,300,400,500];
+		var Search=300;
+		if(findElement(arr,Search))
+		{
+			console.log('The number '+ Search +' is present is an array') ;
+		}	
+		else 
+		{
+			console.log("The number is not present in an array");
+		}
+</script>
+
+</body></html>
